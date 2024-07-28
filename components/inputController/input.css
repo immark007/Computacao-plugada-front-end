@@ -1,0 +1,83 @@
+@import url('/assets/css/base/reset.css');
+@import url('/assets/css/base/global.css');
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: 320px;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    width: 100%;
+}
+
+
+.text-primary{
+    margin-bottom: 20px;
+    color: #07377A;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    width: 210px;
+    height: 27px;
+    padding-left: 5px;
+    border-radius: 2px;
+
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: #07377A;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.link_href{
+    font-size: 16px;
+    color: #2f2f2f;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 280px;
+        height: 300px;
+    }
+    .text-primary{
+        font-size: 20px;
+    }
+}
